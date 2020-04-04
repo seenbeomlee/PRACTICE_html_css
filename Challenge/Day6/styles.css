@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 769px;
+  height: 811px;
+}
+
+@keyframes first_animation {
+  0% {
+    transform: none;
+  }
+  10% {
+    transform: scaleY(2.5);
+  }
+  30% {
+    transform: none;
+  }
+}
+
+@keyframes second_animation {
+  0% {
+    transform: rotate(-0.5turn);
+  }
+  30% {
+    transform: none;
+  }
+}
+
+.box1 {
+  background-color: #1eac9c;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  background-color: #76c4c6;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-child2 {
+  display: flex;
+  justify-content: space-between;
+  width: 70px;
+  animation: 1s second_animation infinite ease-in-out;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.box-child:nth-child(1) {
+  background-color: white;
+  width: 15px;
+  height: 40px;
+  margin: 2.5px;
+  animation: 2s first_animation infinite ease-in-out 0.5s;
+}
+
+.box-child:nth-child(2) {
+  background-color: white;
+  width: 15px;
+  height: 40px;
+  margin: 2.5px;
+  animation: 2s first_animation infinite ease-in-out 0.7s;
+}
+
+.box-child:nth-child(3) {
+  background-color: white;
+  width: 15px;
+  height: 40px;
+  margin: 2.5px;
+  animation: 2s first_animation infinite ease-in-out 0.9s;
+}
+
+.box-child:nth-child(4) {
+  background-color: white;
+  width: 15px;
+  height: 40px;
+  margin: 2.5px;
+  animation: 2s first_animation infinite ease-in-out 1.1s;
+}
+
+.box-child:nth-child(5) {
+  background-color: white;
+  width: 15px;
+  height: 40px;
+  margin: 2.5px;
+  animation: 2s first_animation infinite ease-in-out 1.3s;
+}
