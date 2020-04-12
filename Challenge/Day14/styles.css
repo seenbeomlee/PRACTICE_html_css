@@ -1,0 +1,237 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: white;
+  opacity: 0.7;
+  width: 750px;
+  height: 800px;
+}
+
+.box1 {
+  background-color: #f7f7f7;
+  border: 5px gray solid;
+  width: 750px;
+  margin-bottom: 25px;
+  height: 250px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.box1_image {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  position: relative;
+  background-image: url("src/camera.png");
+  background-size: cover;
+  background-position-y: -11px;
+}
+
+.box1_over {
+  width: 300px;
+  height: 200px;
+  background-color: #273949;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.box1_over_top {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.box1_over_mid {
+  color: #e94363;
+  font-weight: 700;
+}
+
+.box1_over_bottom {
+  margin-top: 20px;
+  width: 90px;
+  height: 25px;
+  background-color: #e94363;
+  font-size: 15px;
+  text-align: center;
+  padding: 2px;
+  color: white;
+}
+
+.box1_over:hover {
+  opacity: 1;
+  transform: translate(15px, 15px);
+}
+
+.box2 {
+  background-color: white;
+  border: 5px gray solid;
+  width: 750px;
+  margin-bottom: 25px;
+  height: 250px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.box2_back {
+  width: 300px;
+  height: 200px;
+}
+
+.box2_hover {
+  width: 300px;
+  height: 200px;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+}
+
+.image2 {
+  width: 300px;
+  height: 200px;
+  background-image: url("src/game_center.png");
+  background-size: cover;
+  background-position-y: -10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.box2_hover:hover > .image2 {
+  transform: translateY(-30px);
+}
+
+.box2_hover:hover > .box2_under_nav {
+  transform: translateY(-55px);
+}
+
+.box2_under_nav {
+  background-color: #273949;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.text_up2 {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.text_bottom2 {
+  font-size: 13px;
+  color: #e94363;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.box2_under_nav_right {
+  margin-top: 20px;
+  width: 90px;
+  height: 25px;
+  background-color: #e94363;
+  font-size: 15px;
+  text-align: center;
+  padding: 2px;
+  color: white;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.box3 {
+  background-color: white;
+  border: 5px gray solid;
+  width: 750px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3_hover {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.box3_image {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  background-image: url("src/safari.png");
+  background-size: cover;
+  position: relative;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s ease-in;
+}
+
+.box3_hover:hover > .box3_image {
+  transform: translateY(-25px) scale(0.5);
+}
+
+.box3_under {
+  width: 300px;
+  height: 200px;
+  background-color: #2c3f52;
+}
+
+.box3_under_nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  margin-top: 145px;
+}
+
+.box3_under_nav_left {
+  margin-top: 10px;
+}
+
+.text_up {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.text_bottom {
+  font-size: 13px;
+  color: #e94363;
+  font-weight: 700;
+}
+
+.box3_under_nav_right {
+  margin-top: 20px;
+  width: 90px;
+  height: 25px;
+  background-color: #e94363;
+  font-size: 15px;
+  text-align: center;
+  padding: 2px;
+  color: white;
+}
