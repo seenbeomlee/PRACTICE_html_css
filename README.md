@@ -1,3 +1,3 @@
-# kakao_clone
+# practice for html and css
 
-kakao clone desktop app
+practice for basic of html and css coding
