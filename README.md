@@ -13,7 +13,7 @@ practice for basic of html and css coding
 > flex-grow: 2; - 여분의 공간이 있으면, 더 크게 됨 (다른 특성을 해치지 않는 선에서)
 > flex-basis: element에게 처음 크기를 주는 것. main-axis를 나타낸다. (before changed) flex-grow, flex-shrink에 의해 변하게 된다.
 
-#Day3
+# Day3
 > display: grid
 > grid-template-columns: 20px 55px 89px 100px => 4개의 child의 width가 이 크기를 따라서 격자로 배열됨
 > ㅁ ㅁ ㅁ
@@ -41,3 +41,32 @@ practice for basic of html and css coding
 >  background-color: aaa;
 >  grid-column-start: 1;
 >  grid-column-end: 2; 하면, 1~2 column 사이에 그려짐. row도 마찬가지로 격자 무늬를 만들 수 있다 }
+
+## Day4
+>  grid-column 1 / -1 => 1 column ~ lost column
+> grid-column 1 / 4 => 1 ~ 4 column
+> grid-column: span 4 => 1 ~ 4 column (span -1 doesn't work)
+> grid-column: 2 / span 2 => 2에서 시작 ~ 2칸 => 2 ~ 4 column
+
+>  lineNaming
+> [moomoo-line] 100px [second-line] 100px ... [fifth-line];
+> grid-column moomoo-line / fourth line === 1 / 4 => just naming for column
+
+# fraction
+> fr == fraction == 사용 가능한 넓이
+> column-template-columns: 4fr 1fr 1fr 1fr ==> if body width 700 => 400 100 100 100 으로 변환 (px은 display에 flex하지 않음)
+> repeat(4, 1fr) 처럼 사용 가능하다
+
+# grid-template
+> "header header header header" 1fr
+> "content content content nav " 2fr
+> "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr
+
+# justify-items (default: stretch)
+> start => not strech (grid는 만들어지지만, item은 맞춰서 늘어나지 않음) , center, end
+
+# align-items (default: stretch)
+> same as justify
+
+# place-items
+> place-items : stretch / center (align / justify) 로 shortcut

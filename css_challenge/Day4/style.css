@@ -1,0 +1,73 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+.grid {
+  background-color: white;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(4, 120px);
+  grid-template-areas:
+    'b1 b1 b2 b2'
+    'b1 b1 b2 b2'
+    'b3 b3 b4_1 b4_2'
+    'b3 b3 b4_3 b4_4';
+}
+
+.box {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+}
+
+.box_o {
+  color: #f44606;
+}
+
+.box_w {
+  color: white;
+}
+
+.b1 {
+  grid-area: b1;
+  background-color: #dae7de;
+  line-height: 240px;
+}
+
+.b2 {
+  grid-area: b2;
+  background-color: #008a69;
+  line-height: 240px;
+}
+
+.b3 {
+  grid-area: b3;
+  background-color: #f44607;
+  line-height: 240px;
+}
+
+.b4_1 {
+  grid-area: b4_1;
+  background-color: #f7abc5;
+}
+
+.b4_2 {
+  grid-area: b4_2;
+  background-color: #5f5fa9;
+}
+
+.b4_3 {
+  grid-area: b4_3;
+  background-color: #ffc128;
+}
+
+.b4_4 {
+  grid-area: b4_4;
+  background-color: #f97374;
+}
