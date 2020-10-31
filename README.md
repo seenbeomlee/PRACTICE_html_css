@@ -70,3 +70,25 @@ practice for basic of html and css coding
 
 # place-items
 > place-items : stretch / center (align / justify) 로 shortcut
+
+## Day5
+
+## Day6
+
+# CSS preprocessors
+> They are programs that transform special CSS to normal CSS.
+
+# browsers doesn't understand SCSS
+> we can use variables without SCSS
+> $name-of-variable:value => this is the format to create variable on SCSS
+> &:hover {} => write a nested :hover on SCSS
+
+# mixins & extends
+> mixins and extends => we both use them to re-use styles
+> Mixins can have logic and args, but extends cannot
+> we can give arguments to mixins
+> we can put if/else in mixins
+> @mixin btn{} => create a mixin called 'btn'
+> %btn{} => create an extend called 'btn
+
+
