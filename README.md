@@ -62,16 +62,43 @@ practice for basic of html and css coding
 > "content content content nav " 2fr
 > "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr
 
-# justify-items (default: stretch)
+# justify-items (default: stretch) => grid의 item에 일괄적으로 적용
 > start => not strech (grid는 만들어지지만, item은 맞춰서 늘어나지 않음) , center, end
 
-# align-items (default: stretch)
+# align-items (default: stretch) => grid의 item에 일괄적으로 적용
 > same as justify
 
 # place-items
 > place-items : stretch / center (align / justify) 로 shortcut
 
 ## Day5
+
+# align-self && justify-self
+> place-self: end center === justify-self: end; align-self: center;
+
+# grid-auto-rows
+> grid-auto-rows: 100px => grid에 item이 몇 개가 들어가던, row의 크기를 100px로 만들어준다. repeat(4, 100px) 이라고 하면 4개만 100px로 정의.
+
+# grid-auto-flow (default: row)
+> grid-auto-flow: column; => grid item이 넘칠 때, row로 생성할지, column으로 생성할 지 결정한다. (axis를 결정하는 역할을 수행함)
+> column => vertical => gallery를 만들 때 사용될 수 있다(사진이 가로로 쭉- 나열되도록 grid가 설정됨)
+> row => horizontal
+
+# grid-auto-columns
+> same as grid-auto-rows
+
+# minmax
+> grid-template-column: repeat(10, 1fr); => 'fr' 단위가 너무 작게/크게 안되었으면 좋겠다.
+> grid-template-column: repeat(10, minmax(100px, 1fr)); => 100px ~ 1fr 크기로 grid-item의 size 조절
+
+# auto-fit / auto-fill ***
+> grid-template-column: repeat(auto-fill, minmax(100px, 1fr)); => create column as many as possible (남는 공간에 비어있는 grid-item을 만듬)
+>grid-template-column: repeat(auto-fit, minmax(100px, 1fr)); => 현재 element를 stretch해서 size를 fit 시킨다
+
+# min-content / max-content ***
+> grid-template-columns: max-content min-content => max-content를 하면, box안에 span을 넣었을 때, '한 즐' 안에 span을 모두 담을 수 있을 만큼 box size를 auto-fit / min-content는 box '전체' 안에 span을 넣을 수 있을 만큼 작게 auto-fit
+> min-content
+> max-content
 
 ## Day6
 
@@ -90,5 +117,4 @@ practice for basic of html and css coding
 > we can put if/else in mixins
 > @mixin btn{} => create a mixin called 'btn'
 > %btn{} => create an extend called 'btn
-
 
