@@ -1,4 +1,21 @@
-practice for basic of html and css coding
+# practice for basic of html and css coding
+
+> SCSS
+
+- [ ] Variables
+  >
+- [ ] Nesting
+  >
+- [ ] Partials
+  >
+- [ ] Mixins
+  >
+- [ ] Extend
+  >
+- [ ] Responsive Mixins
+  >
+
+> gulp : CSS를 compile하거나 transform 해주는 nodeJS package (scss, sass => css)
 
 # Day1
 
