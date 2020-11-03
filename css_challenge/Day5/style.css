@@ -1,0 +1,88 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 150px));
+  grid-auto-rows: 200px;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+  box-sizing: inherit;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.text__detail {
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.image {
+  background-color: whitesmoke;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.text:nth-child(1) {
+  background-color: cornflowerblue;
+}
+.image:nth-child(2) {
+  background-image: url('images/undraw_coffee_break_j3of.svg');
+}
+.text:nth-child(3) {
+  background-color: tomato;
+}
+.image:nth-child(4) {
+  background-image: url('images/undraw_Freelancer_re_irh4.svg');
+}
+.text:nth-child(5) {
+  background-color: turquoise;
+}
+.text:nth-child(6) {
+  background-color: darkcyan;
+}
+.image:nth-child(7) {
+  background-image: url('images/undraw_camping_noc8.svg');
+}
+.text:nth-child(8) {
+  background-color: slategray;
+}
+.image:nth-child(9) {
+  background-image: url('images/undraw_Savings_re_eq4w.svg');
+}
+.text:nth-child(10) {
+  background-color: coral;
+}
+.image:nth-child(11) {
+  background-image: url('images/undraw_barbecue_3x93.svg');
+}
+.text:nth-child(12) {
+  background-color: burlywood;
+}
